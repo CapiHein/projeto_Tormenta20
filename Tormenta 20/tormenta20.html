@@ -1,12 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title> Tormenta 20 </title>
+    <title> Criador de Fichas </title>
     <meta charset="UTF-8">
+    <style>
+        body { font-family: Arial; margin: 20px ;}
+        label {display: block; margin-top: 10 px;}
+        button { margin-top: 15 px; padding: 8px;}
+    </style>
 </head>
 
 <body>
     <!-- Corpo da Página! -->
+     <h1> Criar Ficha de Personagens </h1>
+
+    <!-- Input de Valores pelo usuário -->
+    <form id="formFicha">
+        <label for="nome"> Nome do Personagem:</label>
+        <input type="text" id="nome" required>
+
+       <label for="raca-input"> Raça:</label>
+       <input
+        type:"text"
+        id="raca-input"
+        list="racas-list"
+        placeholder="Digite ou selecione uma raça"
+        autocomplete="off"
+        required
+        >
+            <datalist id="racas-list">
+
+            </datalist>
+    </form>
+    
+    <script scr="scripts.js"></script>
 
 </body>
 </html>
